@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Laravel</title>
+    <title>Laravel Project</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -33,6 +33,7 @@
         <p>Your Laravel application is running successfully.</p>
         <p>You're ready to start building something amazing.</p>
         <p>first change through git commit</p>
+        <p>Testing github actions!!!!</p>
     </div>
 </body>
 </html>
