@@ -32,7 +32,7 @@
         <h1>Welcome to Laravel!</h1>
         <p>Your Laravel application is running successfully.</p>
         <p>You're ready to start building something amazing.</p>
-        <p>Laravel Version: {{ Illuminate\Foundation\Application::VERSION }}</p>
+        <p>first change through git commit</p>
     </div>
 </body>
 </html>
