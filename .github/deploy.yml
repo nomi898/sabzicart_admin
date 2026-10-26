@@ -35,5 +35,5 @@ jobs:
             sudo systemctl reload php8.5-fpm
             sudo systemctl reload nginx
 
-            pm2 restart your-app --update-env
+            pm2 restart sabzicart --update-env
             pm2 status
