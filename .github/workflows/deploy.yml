@@ -35,5 +35,7 @@ jobs:
             sudo systemctl reload php8.5-fpm
             sudo systemctl reload nginx
 
-            /home/ubuntu/.nvm/versions/node/v24.22.1/bin/pm2 pm2 restart sabzicart --update-env
-            /home/ubuntu/.nvm/versions/node/v24.22.1/bin/pm2 pm2 status
+            export PATH="/home/ubuntu/.nvm/versions/node/v24.22.1/bin:$PATH"
+
+            pm2 restart sabzicart --update-env
+            pm2 status
