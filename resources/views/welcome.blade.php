@@ -112,7 +112,6 @@
 <body>
     <header>
         <h1>🥬 SabziCart</h1>
-        <p>Freshness starts here</p>
     </header>
 
     <main>
