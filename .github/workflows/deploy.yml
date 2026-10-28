@@ -37,5 +37,5 @@ jobs:
 
             export PATH="/home/ubuntu/.nvm/versions/node/v24.22.1/bin:$PATH"
 
-            pm2 restart sabzicart --update-env
+            pm2 restart laravel-admin --update-env
             pm2 status
