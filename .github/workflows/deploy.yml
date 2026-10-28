@@ -4,6 +4,11 @@ name: Laravel CI/CD Pipeline
 on:
   push:
     branches: ["main"]
+  workflow_dispatch:
+
+concurrency:
+  group: laravel-production-deploy
+  cancel-in-progress: false
 
 jobs:
   deploy:
@@ -25,6 +30,7 @@ jobs:
 
             composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
 
+            php artisan migrate --force
             php artisan optimize:clear
             php artisan config:cache
             php artisan route:cache
@@ -37,7 +43,7 @@ jobs:
 
             export PATH="/home/ubuntu/.nvm/versions/node/v24.22.1/bin:$PATH"
 
-            pm2 restart sabzicart --update-env
+            pm2 restart laravel-admin --update-env
             pm2 status
             
             curl --fail --silent --show-error \
